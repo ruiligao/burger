@@ -13,3 +13,6 @@ Using an home-grown ORM, the app has 3 basic CRUD functions...
   (3) CREATE a new burger using the "Place Order" form, which... * hits a /api/burger route in Express to insert a new burger into           the MySQL database * re-routes the webpage back to the index, where the burger is now ready to be eaten column (via Handlebars)
   
   ## Screen short
+  
+  ![Screenshot (84)](https://user-images.githubusercontent.com/47795010/55933820-85ae3080-5be3-11e9-90fc-2505ba2eb474.png)
+
