@@ -14,5 +14,4 @@ Using an home-grown ORM, the app has 3 basic CRUD functions...
   
   ## Screen short
   
-  ![Screenshot (84)](https://user-images.githubusercontent.com/47795010/55933820-85ae3080-5be3-11e9-90fc-2505ba2eb474.png)
 
