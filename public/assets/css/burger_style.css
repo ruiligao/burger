@@ -1,0 +1,19 @@
+body {
+    background-color: aqua;
+}
+img {
+    width: 300px;
+    margin-left: 400px;
+    margin-top:60px;
+    margin-bottom: 20px;
+}
+form {
+    margin-left:100px;
+}
+.submit {
+    margin-left: 300px;
+}
+#lable {
+    font-size: 32px;
+    margin-left: 240px;
+}

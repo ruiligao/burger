@@ -1,0 +1,46 @@
+<div class="container">
+    <div>
+        <img src="/assets/img/q4.gif">
+        <h1 class="text-center">Eat Da-Burger!</h1>
+    </div>
+    <div class="row mt-5">
+        <div class="col-md-1"></div>
+        <div id='addburger' class="col-md-4 h4hj">
+            <h2 class="ml-5"> New burgers!</h2>
+            {{#each burger}}
+            {{#unless devoured}}
+            <form action="/api/burger/{{id}}">
+                <div class="input-group mt-4 mb-4 mr-5">
+                    <li class="form-control h3">{{id}}. {{name}}</li>
+                    <span class="input-group-btn">
+                        <button class="btn btn-success devour-button" type="submit">Devour It!</button>
+                    </span>
+                </div>
+            </form>
+            {{/unless}}
+            {{/each}}
+        </div>
+
+        <div class="col-md-2"></div>
+        <div id="burgerlist" class="col md-4 h4">
+            <h2>All burgers we have!</h2>
+            <ul>
+                {{#each burger}}
+                {{#if devoured}}
+                <li class="mt-4 mb-4 h3">
+                    <p>{{this.id}}. {{this.name}}</p>
+                </li>
+                {{/if}}
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+    <form action="/api/burger" method="post" class="mt-5">
+        <div class="form-group col-md-10">
+            <label id="lable" for="input">Add the burger</label>
+            <input type="text" class="form-control" name="burger" id="inputburger" aria-describedby="emailHelp"
+                placeholder="Enter a burger you want to eat">
+        </div>
+        <input type="submit" value="submit" class="btn btn-primary submit"/>
+    </form>
+</div>
